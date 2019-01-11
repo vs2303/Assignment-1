@@ -1,8 +1,14 @@
+body{
+    padding-top: 25vh
+}
+.mainContainer{
+    margin: auto;
+    width: 60%;
+}
 .header{
-    margin-top: 5vw;
     background-color: dodgerblue;
     margin-bottom: 20px;
-    height: 60px;
+    min-height: 60px;
 }
 h2{
     font-family: Arial, Helvetica, sans-serif;
@@ -10,7 +16,6 @@ h2{
     text-align: center;
     color: white;
     font-size: 35px;
-    
 }
 input[type="number"]{
     border: 2px solid #cccbcb;
@@ -37,21 +42,13 @@ button{
     border-radius: 5px;
     font-size: 20px;
 }
-
-table{
-    text-align: center;
-    margin-left: 29vw;
-    
-}
 .resulthead, #result, .result{
     min-height: 60px;
     background-color: tomato;
     font-family: Verdana,sans-serif !important;
-    padding: auto;
     text-align: center;
     color: white;
-    font-size: 25px;
-    
+    font-size: 25px;   
 }
 .result{
     padding: 50px;

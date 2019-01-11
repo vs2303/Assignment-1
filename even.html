@@ -1,3 +1,4 @@
+<!-- I have made chnges -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,43 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Even</title>
     <link rel="stylesheet" href="Style/even.css">
+    <script src="Script/even.js"></script>
+    <script src="Script/jquery.js"> </script>
 </head>
-<script src="Script/even.js"></script>
-<script src="Script/jquery.js"> </script>
-<script>
-    $(document).ready(function(){
-        $("#tryAgain").click(tryAgain);
-    });
-</script>
-<body style="text-align: center">
-    <div class="header">
-        <h2>Even Number Getter</h2>
-    </div>
-    <div class="calc">
-        <table >
-            <tr>
-                <td>
-                    <input type="number" name="" id="num" placeholder="Enter Number">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="number" name="" id="cnt" placeholder="Enter Counter">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button onclick="getNumbers()">Get Numbers</button>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <p class="resulthead">Your Result Will Be Displayed Below!</p>
-    <div class="result">
-        <p id="result"></p><br>
-        <button id="tryAgain">Try Again?</button>
-    </div>
 
+<body style="text-align: center">
+    <div class="mainContainer">
+        <div class="header" >
+            <h2>Even Number Getter</h2>
+        </div>
+        <div class="calc">
+
+            <input type="number" name="" id="num" placeholder="Enter Number"><br>
+        
+            <input type="number" name="" id="cnt" placeholder="Enter Counter"><br>
+        
+            <button onclick="getNumbers()">Get Numbers</button><br>
+        
+        </div>
+        <p class="resulthead">Your Result Will Be Displayed Below!</p>
+        <div class="result">
+            <p id="result"></p><br>
+            <button id="tryAgain" onclick="tryAgain()">Try Again?</button>
+        </div>
+    
+    </div>
 </body>
 
 </html>
